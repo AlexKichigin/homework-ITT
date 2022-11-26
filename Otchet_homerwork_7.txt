@@ -244,3 +244,14 @@ Commit _1 Отчет версия 1 - до создания коммита
 
 В коммиете- 6 схранены изменения в отчете по созданию коммита 5 (до создания отчета в git hub)
 
+Добавляем удаленный репозиторий (по протоколу SSH) под именем origin (папка Homerwork_7 (ветка master))
+$ git remote add origin https://github.com/AlexKichigin/homework-IIT
+
+Переименование ветки master  в main
+$ git branch -m main
+
+Проверка результатов добавления удаленного репозитория
+$ git remote -vv
+origin  https://github.com/AlexKichigin/homework-IIT (fetch)
+origin  https://github.com/AlexKichigin/homework-IIT (push)
+
