@@ -1,0 +1,40 @@
+Отчет по выполнению практической работы
+
+Вызов названия текущей папаки
+$ pwd
+/c/Users/alexk
+
+Создание новой папки Homerwork_7
+$ mkdir "Homerwork_7"
+
+Переход в папку Homerwork_7
+$ cd Homerwork_7/
+
+Проверка текущей папки
+$ pwd
+/c/Users/alexk/Homerwork_7
+
+Создание локального репозитория в папке Homerwork_7
+$ git init
+Initialized empty Git repository in C:/Users/alexk/Homerwork_7/.git/
+
+Создание файла с отчетом в папке Homerwork_7
+$ echo "Отчет по выполнению практической работы" >Otchet_homerwork_7.txt
+
+Вызов содержимого папки Homerwork_7
+$ ls
+Otchet_homerwork_7.txt
+
+Открытие файла в Visual Studio Code
+$ code .
+
+Посмотр состояния рабочей директории и staging area
+$ git status
+On branch master
+No commits yet
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Otchet_homerwork_7.txt
+nothing added to commit but untracked files present (use "git add" to track)
+
+
