@@ -37,4 +37,33 @@ Untracked files:
         Otchet_homerwork_7.txt
 nothing added to commit but untracked files present (use "git add" to track)
 
+Перенос файлов из рабочей директории в staging area
+$ git add .
+warning: in the working copy of 'Otchet_homerwork_7.txt', LF will be replaced by CRLF the next time Git touches it
+
+Посмотр состояния рабочей директории и staging area
+$ git status
+On branch master
+No commits yet
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Otchet_homerwork_7.txt
+
+Создание коммита commit-1
+$ git commit -m "Commit _1 Отчет версия 1 - до создания коммита"
+[master (root-commit) 63037c8] Commit _1 Отчет версия 1 - до создания коммита
+ 1 file changed, 40 insertions(+)
+ create mode 100644 Otchet_homerwork_7.txt
+
+Посмотр состояния рабочей директории и staging area
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Посмотр коммитов
+$ git log
+commit 63037c83ae5b0ec1f810e426dd9e89deac68081a (HEAD -> master)
+Author: Alex Kichigin <alexkichigin1978@gmail.com>
+Date:   Sun Nov 27 01:01:40 2022 +0300
+Commit _1 Отчет версия 1 - до создания коммита
 
