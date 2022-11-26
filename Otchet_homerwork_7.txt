@@ -37,7 +37,7 @@ Untracked files:
         Otchet_homerwork_7.txt
 nothing added to commit but untracked files present (use "git add" to track)
 
-Перенос файлов из рабочей директории в staging area
+Перенос файлов из рабочей директории в staging area - строки 1-38
 $ git add .
 warning: in the working copy of 'Otchet_homerwork_7.txt', LF will be replaced by CRLF the next time Git touches it
 
@@ -67,3 +67,39 @@ Author: Alex Kichigin <alexkichigin1978@gmail.com>
 Date:   Sun Nov 27 01:01:40 2022 +0300
 Commit _1 Отчет версия 1 - до создания коммита
 
+Добавление в staging area изменений в в файле Otchet_homerwork_7.txt (Пака - Homerwork_7, ветка - master) - строки 40-68
+$ git add .
+warning: in the working copy of 'Otchet_homerwork_7.txt', LF will be replaced by CRLF the next time Git touches it
+
+Создание коммита commit-2
+$ git commit -m "Commit _2 Отчет версия 2 - создан коммит-1"
+[master 7b3ac81] Commit _2 Отчет версия 2 - создан коммит-1
+ 1 file changed, 29 insertions(+)
+
+Посмотр коммитов
+$ git log
+commit 7b3ac81f94258558a35cb79626d9775033ad33ac (HEAD -> master)
+Author: Alex Kichigin <alexkichigin1978@gmail.com>
+Date:   Sun Nov 27 01:08:32 2022 +0300
+Commit _2 Отчет версия 2 - создан коммит-1
+
+commit 63037c83ae5b0ec1f810e426dd9e89deac68081a
+Author: Alex Kichigin <alexkichigin1978@gmail.com>
+Date:   Sun Nov 27 01:01:40 2022 +0300
+Commit _1 Отчет версия 1 - до создания коммита
+
+Создание и переход на ветку 'second'
+$ git checkout -b "second"
+Switched to a new branch 'second'
+
+Посмотр коммитов
+$ git log
+commit 7b3ac81f94258558a35cb79626d9775033ad33ac (HEAD -> second, master)
+Author: Alex Kichigin <alexkichigin1978@gmail.com>
+Date:   Sun Nov 27 01:08:32 2022 +0300
+Commit _2 Отчет версия 2 - создан коммит-1
+
+commit 63037c83ae5b0ec1f810e426dd9e89deac68081a
+Author: Alex Kichigin <alexkichigin1978@gmail.com>
+Date:   Sun Nov 27 01:01:40 2022 +0300
+Commit _1 Отчет версия 1 - до создания коммита
