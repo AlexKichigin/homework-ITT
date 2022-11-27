@@ -4,26 +4,26 @@
 $ pwd
 /c/Users/alexk
 
-Создание новой папки Homerwork_7
-$ mkdir "Homerwork_7"
+Создание новой папки Homerwork_7_IIT
+$ mkdir "Homerwork_7_IIT"
 
-Переход в папку Homerwork_7
-$ cd Homerwork_7/
+Переход в папку Homerwork_7_IIT
+$ cd Homerwork_7_IIT/
 
 Проверка текущей папки
 $ pwd
-/c/Users/alexk/Homerwork_7
+/c/Users/alexk/Homerwork_7_IIT
 
-Создание локального репозитория в папке Homerwork_7
+Создание локального репозитория в папке Homerwork_7_IIT
 $ git init
-Initialized empty Git repository in C:/Users/alexk/Homerwork_7/.git/
+Initialized empty Git repository in C:/Users/alexk/Homerwork_7_IIT/.git/
 
-Создание файла с отчетом в папке Homerwork_7
-$ echo "Отчет по выполнению практической работы" >Otchet_homerwork_7.txt
+Создание файла с отчетом в папке Homerwork_7_IIT
+$ echo "Отчет по выполнению практической работы" >Otchet_homerwork_7_IIT.txt
 
-Вызов содержимого папки Homerwork_7
+Вызов содержимого папки Homerwork_7_IIT
 $ ls
-Otchet_homerwork_7.txt
+Otchet_homerwork_7_IIT.txt
 
 Открытие файла в Visual Studio Code
 $ code .
@@ -34,12 +34,12 @@ On branch master
 No commits yet
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
-        Otchet_homerwork_7.txt
+        Otchet_homerwork_7_IIT.txt
 nothing added to commit but untracked files present (use "git add" to track)
 
 Перенос файлов из рабочей директории в staging area - строки 1-38
 $ git add .
-warning: in the working copy of 'Otchet_homerwork_7.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Otchet_homerwork_7_IIT.txt', LF will be replaced by CRLF the next time Git touches it
 
 Посмотр состояния рабочей директории и staging area
 $ git status
@@ -47,13 +47,13 @@ On branch master
 No commits yet
 Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
-        new file:   Otchet_homerwork_7.txt
+        new file:   Otchet_homerwork_7_IIT.txt
 
 Создание коммита commit-1
 $ git commit -m "Commit _1 Отчет версия 1 - до создания коммита"
 [master (root-commit) 63037c8] Commit _1 Отчет версия 1 - до создания коммита
  1 file changed, 40 insertions(+)
- create mode 100644 Otchet_homerwork_7.txt
+ create mode 100644 Otchet_homerwork_7_IIT.txt
 
 Посмотр состояния рабочей директории и staging area
 $ git status
@@ -67,9 +67,9 @@ Author: Alex Kichigin <alexkichigin1978@gmail.com>
 Date:   Sun Nov 27 01:01:40 2022 +0300
 Commit _1 Отчет версия 1 - до создания коммита
 
-Добавление в staging area изменений в в файле Otchet_homerwork_7.txt (Пака - Homerwork_7, ветка - master) - строки 40-68
+Добавление в staging area изменений в в файле Otchet_homerwork_7_IIT.txt (Пака - Homerwork_7_IIT, ветка - master) - строки 40-68
 $ git add .
-warning: in the working copy of 'Otchet_homerwork_7.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Otchet_homerwork_7_IIT.txt', LF will be replaced by CRLF the next time Git touches it
 
 Создание коммита commit-2
 $ git commit -m "Commit _2 Отчет версия 2 - создан коммит-1"
@@ -104,16 +104,16 @@ Author: Alex Kichigin <alexkichigin1978@gmail.com>
 Date:   Sun Nov 27 01:01:40 2022 +0300
 Commit _1 Отчет версия 1 - до создания коммита
 
-Добавление в staging area изменений в в файле Otchet_homerwork_7.txt (Пака - Homerwork_7, ветка - second) - строки 70-105
+Добавление в staging area изменений в в файле Otchet_homerwork_7_IIT.txt (Пака - Homerwork_7_IIT, ветка - second) - строки 70-105
 $ git add .
-warning: in the working copy of 'Otchet_homerwork_7.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Otchet_homerwork_7_IIT.txt', LF will be replaced by CRLF the next time Git touches it
 
 Посмотр состояния рабочей директории и staging area
 $ git status
 On branch second
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
-        modified:   Otchet_homerwork_7.txt
+        modified:   Otchet_homerwork_7_IIT.txt
 
 
 Создание коммита commit-3 (ветка second)
@@ -138,9 +138,9 @@ Author: Alex Kichigin <alexkichigin1978@gmail.com>
 Date:   Sun Nov 27 01:01:40 2022 +0300
 Commit _1 Отчет версия 1 - до создания коммита
 
-Добавление в staging area изменений в в файле Otchet_homerwork_7.txt (Пака - Homerwork_7, ветка - second) - строки 107-139
+Добавление в staging area изменений в в файле Otchet_homerwork_7_IIT.txt (Пака - Homerwork_7_IIT, ветка - second) - строки 107-139
 $ git add .
-warning: in the working copy of 'Otchet_homerwork_7.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Otchet_homerwork_7_IIT.txt', LF will be replaced by CRLF the next time Git touches it
 
 Создание коммита commit-3 (ветка second)
 $ git commit -m "Commit _4 Отчет версия 4 - новая ветка - созданию коммита-3"
@@ -182,7 +182,7 @@ $ git branch
 $ git merge -m "Слияние ветки second в текущую ветку master" second
 Updating 7b3ac81..5f6c87a
 Fast-forward (no commit created; -m option ignored)
- Otchet_homerwork_7.txt | 74 +++++++++++++++++++++++++++++++++++++++++++++++++-
+ Otchet_homerwork_7_IIT.txt | 74 +++++++++++++++++++++++++++++++++++++++++++++++++-
  1 file changed, 73 insertions(+), 1 deletion(-)
 
 Посмотр коммитов (активная ветка - master)
@@ -207,7 +207,7 @@ Author: Alex Kichigin <alexkichigin1978@gmail.com>
 Date:   Sun Nov 27 01:01:40 2022 +0300
 Commit _1 Отчет версия 1 - до создания коммита
 
-Добавление в staging area изменений в в файле Otchet_homerwork_7.txt (Пака - Homerwork_7, ветка - master) - строки 141-208
+Добавление в staging area изменений в в файле Otchet_homerwork_7_IIT.txt (Пака - Homerwork_7_IIT, ветка - master) - строки 141-208
 $ git add .
 
 Создание коммита 5 (сохранение изменений по слиянию веток)
@@ -244,14 +244,28 @@ Commit _1 Отчет версия 1 - до создания коммита
 
 В коммиете- 6 схранены изменения в отчете по созданию коммита 5 (до создания отчета в git hub)
 
-Добавляем удаленный репозиторий (по протоколу SSH) под именем origin (папка Homerwork_7 (ветка master))
-$ git remote add origin https://github.com/AlexKichigin/homework-IIT
+Добавляем удаленный репозиторий (по протоколу SSH) под именем origin (папка Homerwork_7_IIT (ветка master))
+$ git remote add origin https://github.com/AlexKichigin//homework-ITT.git
 
 Переименование ветки master  в main
 $ git branch -m main
 
 Проверка результатов добавления удаленного репозитория
 $ git remote -vv
-origin  https://github.com/AlexKichigin/homework-IIT (fetch)
-origin  https://github.com/AlexKichigin/homework-IIT (push)
+origin  https://github.com/AlexKichigin/homework-ITT.git (fetch)
+origin  https://github.com/AlexKichigin/homework-ITT.git (push)
 
+Перенос репозитория на Github
+$ git push -u origin main
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (21/21), done.
+Writing objects: 100% (21/21), 3.97 KiB | 3.97 MiB/s, done.
+Total 21 (delta 6), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (6/6), done.
+To https://github.com/AlexKichigin/homework-ITT.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Комит 8 - сохранение отчета с переносом на Github
